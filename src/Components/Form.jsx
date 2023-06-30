@@ -28,8 +28,16 @@ const Form = () => {
       <form onSubmit={handleSubmit}>
           <input type="text" disabled={mostrar} placeholder="Ingrese su nombre" onChange={(e)=> setUsuario({...usuario,nombre:e.target.value})}/>
           <input type="text"  disabled={mostrar} placeholder="Ingrese su Email" onChange={(e)=> setUsuario({...usuario,email:e.target.value})}/>
-          {mostrar && "Gracias, " + usuario.nombre + " te contactaremos pronto"}
-          {err && "Verifique sus datos , alguno debe tener un error"}
+          <div>
+      {mostrar && (
+        <span style={{ color: 'green' }}>
+          Gracias, {usuario.nombre} te contactaremos pronto &#10004;
+        </span>
+      )}
+    </div>
+          {err && <div>
+      <span style={{ color: 'red' }}>Verifique sus datos , alguno debe tener un error &#10006; </span>
+    </div>}
           <button>Enviar</button>
 
         
