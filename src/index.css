@@ -120,3 +120,69 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
+
+.light {
+  
+  background-color: 'white';
+  }
+  
+.light > a {
+    color: black;
+  }
+.image-card{
+  max-width: 100%;
+}
+
+.icono-favorito {
+  color: gray;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.icono-favorito.activo {
+  color: red;
+}
+
+
+/* navBar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 10px;
+}
+
+.navbar-left {
+  flex-grow: 1;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-items {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-items li {
+  margin-right: 10px;
+}
+
+.navbar-items li:last-child {
+  margin-right: 0;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
