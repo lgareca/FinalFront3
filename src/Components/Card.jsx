@@ -39,7 +39,7 @@ const Card = ({dentista}) => {
     <div className={`card ${state.theme}`}>
         {/* En cada card deberan mostrar en name - username y el id */}
         <Link key={dentista.id} to={'detalle/' + dentista.id}>
-        <img className="image-card" src="../../public/images/doctor.jpg" alt="imagen doctores" />
+        <img className="image-card" src="../../images/doctor.jpg" alt="imagen doctores" />
         <h3>{dentista.name}</h3>
         <p>{dentista.username}</p>
         
