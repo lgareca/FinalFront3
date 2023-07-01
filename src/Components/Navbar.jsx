@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
       <div className="navbar-left">
-        <img src="../../public/images/DH.png" alt="" style={{width: '300px'}}/>
+        <img src="../../images/DH.png" alt="" style={{width: '300px'}}/>
       </div>
       <div className="navbar-right">
       <Link to={routes.home}><h4>Home</h4></Link>
